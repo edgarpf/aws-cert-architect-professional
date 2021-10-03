@@ -22,4 +22,4 @@
 * Use message timers to postpone the delivery of certain messages to the SQS queue.
 * CloudWatch Events cannot trigger a Lambda function upon a new file upload in S3 as this event pattern is not supported.
 * When cross-zone load balancing is enabled, each load balancer node distributes the same traffic percentage across the registered targets in all enabled Availability Zones.
-* ![imagem](https://i.ibb.co/MNgXyGM/imagem.jpg)
+![imagem](https://i.ibb.co/MNgXyGM/imagem.jpg)
