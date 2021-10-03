@@ -26,7 +26,26 @@
 * Use AWS Kinesis Data Streams to facilitate multiple applications consume same streaming data concurrently and independently.
 * If you have multiple AWS Site-to-Site VPN connections, you can provide secure communication between sites using the AWS VPN CloudHub. This enables your remote sites to communicate with each other, and not just with the VPC. Sites that use AWS Direct Connect connections to the virtual private gateway can also be part of the AWS VPN CloudHub.
 * By default, FIFO queues support up to 300 transactions (API calls) per second (300 send, receive, or delete operations per second). When you batch 10 transactions per operation (maximum), FIFO queues can support up to 3,000 transactions per second.
-* To use a certificate with an Application Load Balancer for the same site (the same fully qualified domain name, or FQDN, or set of FQDNs) in a different Region, you must request a new certificate for each Region in which you plan to use it. T
-*  The following content types skip the regional edge cache:
-  - Proxy methods PUT/POST/PATCH/OPTIONS/DELETE go directly to the origin.
-  - Dynamic content, as determined at request time (cache-behavior configured to forward all headers).
+* To use a certificate with an Application Load Balancer for the same site (the same fully qualified domain name, or FQDN, or set of FQDNs) in a different Region, you must request a new certificate for each Region in which you plan to use it.
+* The following content types skip the regional edge cache:
+  * Proxy methods PUT/POST/PATCH/OPTIONS/DELETE go directly to the origin.
+  * Dynamic content, as determined at request time (cache-behavior configured to forward all headers).
+* You can use AWS DMS data validation to ensure that your data has migrated accurately from the source to the target. DMS compares the source and target records and then reports any mismatches. 
+* Process and analyze the AWS X-Ray traces and analyze HTTP methods to determine the root cause of the HTTP errors.
+* AWS Direct Connect links your on-premises data center to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end of the cable is connected to your router, the other to an AWS Direct Connect router. With this connection, you can create virtual interfaces directly to public AWS services (for example, to Amazon S3) or to Amazon VPC, bypassing internet service providers in your network path. An AWS Direct Connect location provides access to AWS in the Region with which it is associated.
+* There are two types of Direct Connect connections:
+  * Dedicated Connection: A physical Ethernet connection associated with a single customer. Customers can request a dedicated connection through the AWS Direct Connect console, the CLI, or the API. This supports speed of 1Gbps and 10Gbps.
+  * Hosted Connection: A physical Ethernet connection that an AWS Direct Connect Partner provisions on behalf of a customer. Customers request a hosted connection by contacting a partner in the AWS Direct Connect Partner Program, who provisions the connection. This supports speed of 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps, and 10Gbps.
+* The following are the default rules for a default security group:
+  * Allow inbound traffic from network interfaces (and their associated instances) that are assigned to the same security group.
+  * Allows all outbound traffic.
+  * So instance X can be pinged from other instances in the default security group.
+* The following are the default rules for a security group that you create:
+  * Allows no inbound traffic.
+  * Allows all outbound traffic.
+* Multi-AZ follows synchronous replication and spans at least two Availability Zones within a single region. Read Replicas follow asynchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region.
+* gp2 volumes deliver single-digit millisecond latencies and the ability to burst to 3,000 IOPS for extended periods of time. Between a minimum of 100 IOPS (at 33.33 GiB and below) and a maximum of 16,000 IOPS (at 5,334 GiB and above), baseline performance scales linearly at 3 IOPS per GiB of volume size.
+* Cost of test file storage on S3 Standard < Cost of test file storage on EFS < Cost of test file storage on EBS.
+* Require that your users access your private content by using special CloudFront signed URLs or signed cookies.
+You should use a signed URL if you want to restrict access to individual files, for example, an installation download for your application. A signed URL includes additional information, for example, expiration date and time, that gives you more control over access to your content. On the other hand, CloudFront signed cookies allow you to control who can access your content when you don't want to change your current URLs or when you want to provide access to multiple restricted files, for example, all of the files in the members' area of a website.
+* Each Snowball Edge device can handle 80TB of data
