@@ -23,3 +23,4 @@
 * CloudWatch Events cannot trigger a Lambda function upon a new file upload in S3 as this event pattern is not supported.
 * When cross-zone load balancing is enabled, each load balancer node distributes the same traffic percentage across the registered targets in all enabled Availability Zones.
 ![imagem](https://i.ibb.co/MNgXyGM/imagem.jpg)
+* Use AWS Kinesis Data Streams to facilitate multiple applications consume same streaming data concurrently and independently
