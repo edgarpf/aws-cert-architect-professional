@@ -23,4 +23,10 @@
 * CloudWatch Events cannot trigger a Lambda function upon a new file upload in S3 as this event pattern is not supported.
 * When cross-zone load balancing is enabled, each load balancer node distributes the same traffic percentage across the registered targets in all enabled Availability Zones.
 ![imagem](https://i.ibb.co/MNgXyGM/imagem.jpg)
-* Use AWS Kinesis Data Streams to facilitate multiple applications consume same streaming data concurrently and independently
+* Use AWS Kinesis Data Streams to facilitate multiple applications consume same streaming data concurrently and independently.
+* If you have multiple AWS Site-to-Site VPN connections, you can provide secure communication between sites using the AWS VPN CloudHub. This enables your remote sites to communicate with each other, and not just with the VPC. Sites that use AWS Direct Connect connections to the virtual private gateway can also be part of the AWS VPN CloudHub.
+* By default, FIFO queues support up to 300 transactions (API calls) per second (300 send, receive, or delete operations per second). When you batch 10 transactions per operation (maximum), FIFO queues can support up to 3,000 transactions per second.
+* To use a certificate with an Application Load Balancer for the same site (the same fully qualified domain name, or FQDN, or set of FQDNs) in a different Region, you must request a new certificate for each Region in which you plan to use it. T
+*  The following content types skip the regional edge cache:
+- Proxy methods PUT/POST/PATCH/OPTIONS/DELETE go directly to the origin.
+- Dynamic content, as determined at request time (cache-behavior configured to forward all headers).
