@@ -12,3 +12,14 @@
 * API Gateway creates RESTful APIs that enable stateless client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateful, full-duplex communication between client and server.
 * Use VPC sharing to share one or more subnets with other AWS accounts belonging to the same parent organization from AWS Organizations.
 * By default, an S3 object is owned by the AWS account that uploaded it. So the S3 bucket owner will not implicitly have access to the objects written by Redshift cluster.
+* Use Centralized VPC Endpoints for connecting with multiple VPCs, also known as shared services VPC.
+* AWS Global Accelerator can be used to blue/green deployment without being subject to DNS caching on client devices and internet resolvers.
+* Use Amazon Aurora Global Database to enable fast local reads with low latency in each region.
+* Use S3 Glacier vault to store the sensitive archived data and then use a vault lock policy to enforce compliance controls.
+* The primary and standby DB instances are upgraded at the same time for RDS MySQL Multi-AZ. All instances are upgraded at the same time for Aurora MySQL.
+* Read Replicas can be manually promoted to a standalone database instance for RDS MySQL whereas Read Replicas for Aurora MySQL can be promoted to the primary instance.
+* Multi-AZ deployments for both RDS MySQL and Aurora MySQL follow synchronous replication.
+* Use message timers to postpone the delivery of certain messages to the SQS queue.
+* CloudWatch Events cannot trigger a Lambda function upon a new file upload in S3 as this event pattern is not supported.
+* When cross-zone load balancing is enabled, each load balancer node distributes the same traffic percentage across the registered targets in all enabled Availability Zones.
+* !(https://i.ibb.co/MNgXyGM/imagem.jpg)
