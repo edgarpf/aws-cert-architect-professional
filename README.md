@@ -28,5 +28,5 @@
 * By default, FIFO queues support up to 300 transactions (API calls) per second (300 send, receive, or delete operations per second). When you batch 10 transactions per operation (maximum), FIFO queues can support up to 3,000 transactions per second.
 * To use a certificate with an Application Load Balancer for the same site (the same fully qualified domain name, or FQDN, or set of FQDNs) in a different Region, you must request a new certificate for each Region in which you plan to use it. T
 *  The following content types skip the regional edge cache:
-- Proxy methods PUT/POST/PATCH/OPTIONS/DELETE go directly to the origin.
-- Dynamic content, as determined at request time (cache-behavior configured to forward all headers).
+  - Proxy methods PUT/POST/PATCH/OPTIONS/DELETE go directly to the origin.
+  - Dynamic content, as determined at request time (cache-behavior configured to forward all headers).
