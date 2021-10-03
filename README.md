@@ -48,4 +48,9 @@
 * Cost of test file storage on S3 Standard < Cost of test file storage on EFS < Cost of test file storage on EBS.
 * Require that your users access your private content by using special CloudFront signed URLs or signed cookies.
 You should use a signed URL if you want to restrict access to individual files, for example, an installation download for your application. A signed URL includes additional information, for example, expiration date and time, that gives you more control over access to your content. On the other hand, CloudFront signed cookies allow you to control who can access your content when you don't want to change your current URLs or when you want to provide access to multiple restricted files, for example, all of the files in the members' area of a website.
-* Each Snowball Edge device can handle 80TB of data
+* Each Snowball Edge device can handle 80TB of data.
+* To use private hosted zones, DNS hostnames and DNS resolution should be enabled for the VPC.
+* Use Enhanced Fanout feature of Kinesis Data Streams to support a great read throughput for the downstream applications.
+* Use AWS Volume Gateway - Cached Volume - to store the most frequently accessed results locally for low-latency access while storing the full volume with all results in its Amazon S3 service bucket.
+* Snowball Edge Storage Optimized is the optimal choice if you need to securely and quickly transfer dozens of terabytes to petabytes of data to AWS. 
+* 
