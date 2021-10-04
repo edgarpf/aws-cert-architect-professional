@@ -53,4 +53,9 @@ You should use a signed URL if you want to restrict access to individual files, 
 * Use Enhanced Fanout feature of Kinesis Data Streams to support a great read throughput for the downstream applications.
 * Use AWS Volume Gateway - Cached Volume - to store the most frequently accessed results locally for low-latency access while storing the full volume with all results in its Amazon S3 service bucket.
 * Snowball Edge Storage Optimized is the optimal choice if you need to securely and quickly transfer dozens of terabytes to petabytes of data to AWS. 
+* There are no S3 data transfer charges when data is transferred in from the internet.
+* If you intend to reuse code in more than one Lambda function, you should consider creating a Lambda Layer for the reusable code.
+* Since Lambda functions can scale extremely quickly, it's a good idea to deploy a CloudWatch Alarm that notifies your team when function metrics such as ConcurrentExecutions or Invocations exceeds the expected threshold.
+* By default, Lambda functions always operate from an AWS-owned VPC and hence have access to any public internet address or public AWS APIs. Once a Lambda function is VPC-enabled, it will need a route through a NAT gateway in a public subnet to access public resources.
+* Using Amazon Redshift Spectrum, you can efficiently query and retrieve structured and semistructured data from files in Amazon S3 without having to load the data into Amazon Redshift tables.
 * 
