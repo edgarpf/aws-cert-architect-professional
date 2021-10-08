@@ -82,6 +82,11 @@ To resolve this issue, you can:
 *  Amazon EC2 provides a Spot Instance interruption notice, which gives the instance a two-minute warning before it is interrupted. If Amazon ECS Spot Instance draining is enabled on the instance, ECS receives the Spot Instance interruption notice and places the instance in DRAINING status. When a container instance is set to DRAINING, Amazon ECS prevents new tasks from being scheduled for placement on the container instance. Service tasks on the draining container instance that are in the PENDING state are stopped immediately. If there are container instances in the cluster that are available, replacement service tasks are started on them.
 * When a user requests your content, CloudFront typically serves the requested content regardless of where the user is located. If you need to prevent users in specific countries from accessing your content, you can use the CloudFront geo restriction feature.
 * When you create a VPC using Amazon VPC, Route 53 Resolver automatically answers DNS queries for local VPC domain names for EC2 instances (ec2-192-0-2-44.compute-1.amazonaws.com) and records in private hosted zones (acme.example.com). For all other domain names, Resolver performs recursive lookups against public name servers. You also can integrate DNS resolution between Resolver and DNS resolvers on your network by configuring forwarding rules. Your network can include any network that is reachable from your VPC, such as the following:
-  * The VPC itself
-  * Another peered VPC
-  * An on-premises network that is connected to AWS with AWS Direct Connect, a VPN, or a network address translation (NAT) gateway
+  * The VPC itself.
+  * Another peered VPC.
+  * An on-premises network that is connected to AWS with AWS Direct Connect, a VPN, or a network address translation (NAT) gateway.
+* There are 3 types of DeletionPolicy Options:
+  * Delete
+  * Retain
+  * Snapshot
+For Delete, CloudFormation deletes the resource and all its contents if applicable during stack deletion. For Retain, CloudFormation keeps the resource without deleting the resource or its contents when its stack is deleted. For Snapshot, CloudFormation creates a snapshot of the resource before deleting it.
