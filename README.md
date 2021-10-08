@@ -89,4 +89,5 @@ To resolve this issue, you can:
   * Delete
   * Retain
   * Snapshot
+  
 For Delete, CloudFormation deletes the resource and all its contents if applicable during stack deletion. For Retain, CloudFormation keeps the resource without deleting the resource or its contents when its stack is deleted. For Snapshot, CloudFormation creates a snapshot of the resource before deleting it.
