@@ -147,3 +147,5 @@ You can use the following mechanisms for authentication and authorization:
   * Use the same case (uppercase or lowercase) for all instances of the same parameter.
 * SNI Custom SSL relies on the SNI extension of the Transport Layer Security protocol, which allows multiple domains to serve SSL traffic over the same IP address by including the hostname which the viewers are trying to connect to.
 You can host multiple TLS secured applications, each with its own TLS certificate, behind a single load balancer. In order to use SNI, all you need to do is bind multiple certificates to the same secure listener on your load balancer. ALB will automatically choose the optimal TLS certificate for each client. These features are provided at no additional charge.
+* After you've created your VPC, you further expand your network by associating one to utmost 4 secondary CIDR blocks to your VPC.
+* 
