@@ -37,4 +37,8 @@
 * The maxReceiveCount is the number of times a consumer tries receiving a message from a queue without deleting it before being moved to the dead-letter queue. Setting the maxReceiveCount to a low value, such as 1, would result in any failure to receive a message to cause the message to be moved to the dead-letter queue. Such failures include network errors and client dependency errors.
 * Setting up a diversified allocation strategy for your Spot Fleet is a best practice to increase the chances that a spot request can be fulfilled by EC2 capacity in the event of an outage in one of the Availability Zones.
 * SCPs do not affect any service-linked role. Service-linked roles enable other AWS services to integrate with AWS Organizations and can't be restricted by SCPs.
+* AWS CloudHSM is a cloud-based hardware security module (HSM) that enables you to easily generate and use your own encryption keys on the AWS Cloud.
+* Amazon Elastic Container Service (ECS) Anywhere is a feature of Amazon ECS that lets you run and manage container workloads on your infrastructure. This feature helps you meet compliance requirements and scale your business without sacrificing your on-premises investments. It ensures consistency with the same on-premises Amazon ECS tools when you migrate to AWS.
+* Amazon Connect provides a seamless omnichannel experience through a single unified contact center for voice and chat.
+* Amazon Lex is a service for building conversational interfaces into any application using voice and text.
 * 
