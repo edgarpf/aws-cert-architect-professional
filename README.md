@@ -41,4 +41,10 @@
 * Amazon Elastic Container Service (ECS) Anywhere is a feature of Amazon ECS that lets you run and manage container workloads on your infrastructure. This feature helps you meet compliance requirements and scale your business without sacrificing your on-premises investments. It ensures consistency with the same on-premises Amazon ECS tools when you migrate to AWS.
 * Amazon Connect provides a seamless omnichannel experience through a single unified contact center for voice and chat.
 * Amazon Lex is a service for building conversational interfaces into any application using voice and text.
+* In AWS Storage Gateway, your iSCSI initiators connect to your volumes as iSCSI targets. Storage Gateway uses Challenge-Handshake Authentication Protocol (CHAP) to authenticate iSCSI and initiator connections. CHAP provides protection against playback attacks by requiring authentication to access storage volume targets.
+* AWS IoT Device Management is a service that makes it easy to securely register, organize, monitor, and remotely manage IoT devices at scale throughout their lifecycle.
+* A Route 53 Resolver Endpoint is a customer-managed resolver consisting of one or more Elastic Network Interfaces (ENIs) deployed on your VPC. Resolver Endpoints are classified into two types:
+  * Inbound Endpoint – provides DNS resolution of AWS resources, such as EC2 instances, for your corporate network.
+  * Outbound Endpoint – provides resolution of specific DNS names that you configure using forwarding rules to your VPC
+* SCPs are similar to IAM permission policies except that they don’t grant any permissions. SCP policy simply specifies the services and actions that users and roles can use in the accounts.
 * 
