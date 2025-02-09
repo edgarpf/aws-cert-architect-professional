@@ -68,4 +68,22 @@
 * You can write TypeScript or Python code that will define AWS resources, convert these codes to AWS CloudFormation templates by using AWS Cloud Development Kit (AWS CDK), create CloudFormation stacks using AWS CDK, create an AWS CodeBuild job that includes AWS CDK and add this stage to AWS CodePipeline.
 * Amazon WorkDocs is a fully managed, secure content creation, storage, and collaboration service. With Amazon WorkDocs, you can easily create, edit, and share content, and because it’s stored centrally on AWS, access it from anywhere on any device. Amazon WorkDocs makes it easy to collaborate with others, and lets you easily share content, provide rich feedback, and collaboratively edit documents.
 * If you can predict your need for Amazon DynamoDB read-and-write throughput, reserved capacity offers significant savings over the normal price of DynamoDB provisioned throughput capacity.
-* 
+* Step Functions will keep your Lambda functions free of additional logic by triggering and tracking each step of your application for you.
+* You can change the placement group for an instance in any of the following ways:
+  * Move an existing instance to a placement group
+  * Move an instance from one placement group to another
+  * Remove an instance from a placement group
+* The Lambda functions won’t be able to quickly scale and serve requests during peak traffic. By default, the burst concurrency for Lambda functions is between 500-3000 requests per second (depending on region).
+* Access to EFS is faster compared to calling objects on S3 buckets.
+* File systems in the Max I/O mode can scale to higher levels of aggregate throughput and operations per second. However, this scaling is done with a tradeoff of slightly higher latencies for file metadata operations.
+* Amazon Connect is an easy-to-use omnichannel cloud contact center that helps companies provide superior customer service across voice, chat, and tasks at a lower cost than traditional contact center systems.
+* Amazon Connect uses the following services for ML/AI:
+  * Amazon Lex—Let you create a chatbot to use as an Interactive Voice Response (IVR).
+  * Amazon Polly—Provides text-to-speech in all contact flows.
+  * Amazon Transcribe—Grabs conversation recordings from Amazon S3 and transcribes them to text so you can review them.
+  * Amazon Comprehend—Takes the transcription of recordings and applies speech analytics machine learning to the call to identify sentiment, keywords, adherence to company policies, and more.
+* You can use Amazon RDS as the building block a sharded architecture. Sharding allows you to split your current instances into smaller ones that could operate more efficiently. It would also provide horizontal scalability, which can be more cost-effective in the long term compared to simply upgrading to a larger DB instance.
+* It is best to store the SSL certificate in IAM or in AWS Certificate Manager (ACM).
+* A Spot Fleet is a set of Spot Instances and optionally On-Demand Instances that are launched based on criteria that you specify. The Spot Fleet selects the Spot capacity pools that meet your needs and launches Spot Instances to meet the target capacity for the fleet. By default, Spot Fleets are set to maintain target capacity by launching replacement instances after Spot Instances in the fleet are terminated. You can submit a Spot Fleet as a one-time request, which does not persist after the instances have been terminated. You can include On-Demand Instance requests in a Spot Fleet request.
+* AWS AppSync is a fully managed service that makes it easy to develop GraphQL APIs by handling the heavy lifting of securely connecting to data sources like Amazon DynamoDB, Lambda, and more. Adding caches to improve performance, subscriptions to support real-time updates, and client-side data stores that keep offline clients in sync are just as easy. Once deployed, AWS AppSync automatically scales your GraphQL API execution engine up and down to meet API request volumes.
+* EC2Rescue can help you diagnose and troubleshoot problems on Amazon EC2 Linux and Windows Server instances. You can run the tool manually, or you can run the tool automatically by using Systems Manager Automation and the AWSSupport-ExecuteEC2Rescue document. The AWSSupport-ExecuteEC2Rescue document is designed to perform a combination of Systems Manager actions, AWS CloudFormation actions, and Lambda functions that automate the steps normally required to use EC2Rescue.
